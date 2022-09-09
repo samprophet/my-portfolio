@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Raleway:wght@200&family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Raleway:wght@200&family=Source+Code+Pro:ital,wght@0,300;1,300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(163, 162, 162);
+    width: 200px;
+    font-family: 'Fira Sans', sans-serif;
+    height: 125vh;
+
+}
+
+.sidebar nav {
+    padding: 30px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    /* background-color: yellow;*/
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /*background-color: skyblue;*/
+    height: 50vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.about {
+    font-size: 40px;
+}
+
+.moreabout {
+    font-size: 22px;
+    margin-top: 23px;
+    font-family: 'fira sans', sans-serif;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor:pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devpic img {
+    height: 50vh;
+}
+/*contactform */
+.contactform{
+    font-family: 'fira sans', sans-serif;
+    padding: 0 34px;
+    padding-top: 144px;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+.contactform form div{
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 15px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+   
+}
+/*contactform button*/
+.contactform button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0 3px;
+    cursor:pointer;
+    
+    
+}
+.contactform button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.contactform button{
+    margin-top: 17px;
+}
+/*blog*/
+.blogContainer h1{
+    padding-left: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.blogitem{
+     margin: 25px;
+     font-family: 'fira sans', sans-serif;
+     
+
+
+}
+.blogitem h2{
+ margin-top: 30px;
+}
+.blogitem p{
+    margin-top: 10px;
+
+}
+.blogContainer button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0 3px;
+    cursor:pointer;
+    
+    
+}
+.blogContainer button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.blogContainer button{
+    margin-top: 17px;
+}
+/*info*/
+.info h1{
+    margin-top:20px;
+    padding-left: 20px;
+    font-size: 40px;
+
+}
+.info p{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.info h2{
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+/*skills*/
+.skillcontainer {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border-radius: 10px;
+    
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.hundered{
+    width: 260px;
+    background-color: aqua;
+
+}
+.fifty{
+    width: 130px;
+    background-color: chartreuse;
+    
+}
+
+.p1{
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.j1{
+    width: 100px;
+    background-color: coral;
+}
+.php{
+    width: 130px;
+    background-color: deepskyblue;
+}
