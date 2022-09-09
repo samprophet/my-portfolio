@@ -11,10 +11,12 @@
 }
 
 .sidebar {
+    position: absolute;
     background-color: rgb(163, 162, 162);
     width: 200px;
     font-family: 'Fira Sans', sans-serif;
     height: 125vh;
+    transition: transform 0.3s ease-in;
 
 }
 
@@ -52,6 +54,7 @@
 }
 
 .devinfo {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -60,29 +63,32 @@
 }
 
 .hello {
-    font-size: 60px;
+    font-size: 3em;
+
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .name {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
-
+    
 }
 
 .about {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .moreabout {
-    font-size: 22px;
+    font-size: 2em;
     margin-top: 23px;
     font-family: 'fira sans', sans-serif;
 }
 
 .buttons {
-    margin-top: 34px;
+    margin-top: 2.2em;
+    font-size: 13px;
 }
 
 .buttons button {
@@ -91,8 +97,8 @@
     color: white;
     background-color: dodgerblue;
     font-weight: bold;
-    font-size: 21px;
-    margin: 0 3px;
+    font-size: 2em;
+    margin: 3px 3px;
     cursor:pointer;
 }
 .buttons button:hover{
@@ -108,6 +114,7 @@
     font-family: 'fira sans', sans-serif;
     padding: 0 34px;
     padding-top: 144px;
+    margin: 0 200px;
 }
 
 .contactform h1{
@@ -157,7 +164,7 @@
 /*blog*/
 .blogContainer h1{
     padding-left: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 
 }
@@ -171,9 +178,11 @@
 }
 .blogitem h2{
  margin-top: 30px;
+ margin: 0 100px;
 }
 .blogitem p{
     margin-top: 10px;
+    margin: 0 100px;
 
 }
 .blogContainer button{
@@ -183,7 +192,7 @@
     background-color: dodgerblue;
     font-weight: bold;
     font-size: 11px;
-    margin: 0 3px;
+    margin: 0 90px;
     cursor:pointer;
     
     
@@ -198,15 +207,18 @@
 }
 /*info*/
 .info h1{
-    margin-top:20px;
+    margin-top:60px;
     padding-left: 20px;
     font-size: 40px;
+    margin-left:100px;
 
 }
 .info p{
     margin: 20px;
     font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
+    margin-left:125px;
+
 
 }
 
@@ -214,11 +226,15 @@
     margin-top: 20px;
     padding-left: 20px;
     font-size: 35px;
+    margin-left:100px;
+
 }
 /*skills*/
 .skillcontainer {
     margin-top: 20px;
     padding-left: 20px;
+    margin-left:100px;
+
 }
 .skill{
     width: 265px;
@@ -256,4 +272,41 @@
 .php{
     width: 130px;
     background-color: deepskyblue;
+}
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+}
+.close{
+    margin-left: 155px;
+    margin-top: 20px;
+}
+
+@media (max-width : 600px){
+    *{
+       /* background-color: rgb(231, 70, 70); */
+    }
+    .buttons{
+        font-size: 6px;
+
+    }
+    .devinfo{
+        font-size: 10px;
+    }
+    .devpic{
+        display: none;
+    }
+   .info, .blogContainer, .contactform{
+    margin: 8px;
+   }
 }
